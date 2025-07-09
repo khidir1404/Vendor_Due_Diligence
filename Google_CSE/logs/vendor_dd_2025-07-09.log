@@ -1,0 +1,127 @@
+2025-07-09 11:25:42,603 | googleapiclient.discovery_cache | INFO | autodetect:49 | file_cache is only supported with oauth2client<4.0.0
+2025-07-09 11:25:42,615 | __main__ | INFO | _initialize_service:474 | Google Custom Search service initialized
+2025-07-09 11:25:47,133 | __main__ | INFO | load_models:215 | Stanza English pipeline loaded successfully
+2025-07-09 11:25:47,143 | __main__ | INFO | _create_directory_structure:717 | Directory structure created successfully
+2025-07-09 11:25:47,178 | __main__ | INFO | run:1132 | Starting Enterprise Vendor Due Diligence Platform with Stanza NLP
+2025-07-09 11:25:57,608 | __main__ | INFO | conduct_due_diligence:721 | Starting due diligence analysis for: COAL INDIA LIMITED
+2025-07-09 11:26:02,583 | __main__ | INFO | conduct_due_diligence:732 | Found 29 URLs for analysis
+2025-07-09 11:26:29,432 | __main__ | ERROR | analyze_page:561 | Analysis failed for https://violationtrackerglobal.goodjobsfirst.org/: 403 Client Error: Forbidden for url: https://violationtrackerglobal.goodjobsfirst.org/
+2025-07-09 11:28:01,892 | __main__ | ERROR | analyze_page:561 | Analysis failed for https://www.bcclweb.in/files/2022/07/Annual_Report_Account_2021-22_Eng.pdf: HTTPSConnectionPool(host='www.bcclweb.in', port=443): Max retries exceeded with url: /files/2022/07/Annual_Report_Account_2021-22_Eng.pdf (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1129)')))
+2025-07-09 11:28:03,325 | __main__ | ERROR | analyze_page:561 | Analysis failed for https://www.cgijoburg.gov.in/pdf/CII-PWC%20White%20Paper%20-%20Indian%20Industrys%20Inclusive%20Footprint%20in%20SA.pdf: HTTPSConnectionPool(host='www.cgijoburg.gov.in', port=443): Max retries exceeded with url: /pdf/CII-PWC%20White%20Paper%20-%20Indian%20Industrys%20Inclusive%20Footprint%20in%20SA.pdf (Caused by SSLError(SSLCertVerificationError(1, '[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1129)')))
+2025-07-09 11:28:06,485 | __main__ | ERROR | generate_pdf:443 | PDF generation failed for https://www.nseindia.com/get-quotes/equity?symbol=COALINDIA: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.nseindia.com/get-quotes/equity?symbol=COALINDIA
+Call log:
+  - navigating to "https://www.nseindia.com/get-quotes/equity?symbol=COALINDIA", waiting until "networkidle"
+
+2025-07-09 11:28:06,486 | __main__ | INFO | conduct_due_diligence:762 | Analysis progress: 3.4%
+2025-07-09 11:28:06,492 | __main__ | ERROR | generate_pdf:443 | PDF generation failed for https://www.oecd.org/content/dam/oecd/en/publications/reports/2017/05/regulatory-policy-in-india_b63e65e4/b335b35d-en.pdf: Page.goto: net::ERR_ABORTED at https://www.oecd.org/content/dam/oecd/en/publications/reports/2017/05/regulatory-policy-in-india_b63e65e4/b335b35d-en.pdf
+Call log:
+  - navigating to "https://www.oecd.org/content/dam/oecd/en/publications/reports/2017/05/regulatory-policy-in-india_b63e65e4/b335b35d-en.pdf", waiting until "networkidle"
+
+2025-07-09 11:28:06,493 | __main__ | INFO | conduct_due_diligence:762 | Analysis progress: 6.9%
+2025-07-09 11:28:06,537 | __main__ | ERROR | generate_pdf:443 | PDF generation failed for https://niti.gov.in/sites/default/files/2020-01/IEA-India-In-depth-review2020.pdf: Page.goto: net::ERR_ABORTED at https://niti.gov.in/sites/default/files/2020-01/IEA-India-In-depth-review2020.pdf
+Call log:
+  - navigating to "https://niti.gov.in/sites/default/files/2020-01/IEA-India-In-depth-review2020.pdf", waiting until "networkidle"
+
+2025-07-09 11:28:06,538 | __main__ | INFO | conduct_due_diligence:762 | Analysis progress: 10.3%
+2025-07-09 11:28:06,553 | __main__ | ERROR | generate_pdf:443 | PDF generation failed for https://cic.gov.in/sites/default/files/Rtinodalofficer_0_0.pdf: Page.goto: net::ERR_ABORTED at https://cic.gov.in/sites/default/files/Rtinodalofficer_0_0.pdf
+Call log:
+  - navigating to "https://cic.gov.in/sites/default/files/Rtinodalofficer_0_0.pdf", waiting until "networkidle"
+
+2025-07-09 11:28:06,553 | __main__ | INFO | conduct_due_diligence:762 | Analysis progress: 13.8%
+2025-07-09 11:28:06,559 | __main__ | ERROR | generate_pdf:443 | PDF generation failed for https://cag.gov.in/webroot/uploads/download_audit_report/2015/Union_Compliance_Report_21_2015_Volume_1.pdf: Page.goto: net::ERR_ABORTED at https://cag.gov.in/webroot/uploads/download_audit_report/2015/Union_Compliance_Report_21_2015_Volume_1.pdf
+Call log:
+  - navigating to "https://cag.gov.in/webroot/uploads/download_audit_report/2015/Union_Compliance_Report_21_2015_Volume_1.pdf", waiting until "networkidle"
+
+2025-07-09 11:28:06,560 | __main__ | INFO | conduct_due_diligence:762 | Analysis progress: 17.2%
+2025-07-09 11:28:06,570 | __main__ | ERROR | generate_pdf:443 | PDF generation failed for https://shaktifoundation.in/wp-content/uploads/2018/07/Discussion-Paper-on-Carbon-Tax-Structure-for-India-Full-Report.pdf: Page.goto: net::ERR_ABORTED at https://shaktifoundation.in/wp-content/uploads/2018/07/Discussion-Paper-on-Carbon-Tax-Structure-for-India-Full-Report.pdf
+Call log:
+  - navigating to "https://shaktifoundation.in/wp-content/uploads/2018/07/Discussion-Paper-on-Carbon-Tax-Structure-for-India-Full-Report.pdf", waiting until "networkidle"
+
+2025-07-09 11:28:06,570 | __main__ | INFO | conduct_due_diligence:762 | Analysis progress: 20.7%
+2025-07-09 11:28:06,572 | __main__ | ERROR | generate_pdf:443 | PDF generation failed for https://archive.coalindia.in/Portals/0/PDF/Corruption_Risk_Mitigation_Policy_26072016.pdf: Page.goto: net::ERR_ABORTED at https://archive.coalindia.in/Portals/0/PDF/Corruption_Risk_Mitigation_Policy_26072016.pdf
+Call log:
+  - navigating to "https://archive.coalindia.in/Portals/0/PDF/Corruption_Risk_Mitigation_Policy_26072016.pdf", waiting until "networkidle"
+
+2025-07-09 11:28:06,572 | __main__ | INFO | conduct_due_diligence:762 | Analysis progress: 24.1%
+2025-07-09 11:28:06,586 | __main__ | ERROR | generate_pdf:443 | PDF generation failed for https://dea.gov.in/sites/default/files/Summary%20Report%202023%20%28English%29.pdf: Page.goto: net::ERR_ABORTED at https://dea.gov.in/sites/default/files/Summary%20Report%202023%20%28English%29.pdf
+Call log:
+  - navigating to "https://dea.gov.in/sites/default/files/Summary%20Report%202023%20%28English%29.pdf", waiting until "networkidle"
+
+2025-07-09 11:28:06,587 | __main__ | INFO | conduct_due_diligence:762 | Analysis progress: 27.6%
+2025-07-09 11:28:06,612 | __main__ | ERROR | generate_pdf:443 | PDF generation failed for https://cvc.gov.in/files/preventive-vigilance-initatives-pdf/PVI%2000001.pdf: Page.goto: net::ERR_ABORTED at https://cvc.gov.in/files/preventive-vigilance-initatives-pdf/PVI%2000001.pdf
+Call log:
+  - navigating to "https://cvc.gov.in/files/preventive-vigilance-initatives-pdf/PVI%2000001.pdf", waiting until "networkidle"
+
+2025-07-09 11:28:06,612 | __main__ | INFO | conduct_due_diligence:762 | Analysis progress: 31.0%
+2025-07-09 11:28:06,628 | __main__ | ERROR | generate_pdf:443 | PDF generation failed for https://www.easterncoal.nic.in/annualreport/annualreport23-24.pdf: Page.goto: net::ERR_ABORTED at https://www.easterncoal.nic.in/annualreport/annualreport23-24.pdf
+Call log:
+  - navigating to "https://www.easterncoal.nic.in/annualreport/annualreport23-24.pdf", waiting until "networkidle"
+
+2025-07-09 11:28:06,629 | __main__ | INFO | conduct_due_diligence:762 | Analysis progress: 34.5%
+2025-07-09 11:28:06,629 | __main__ | ERROR | generate_pdf:443 | PDF generation failed for https://www.cgijoburg.gov.in/pdf/CII-PWC%20White%20Paper%20-%20Indian%20Industrys%20Inclusive%20Footprint%20in%20SA.pdf: Page.goto: net::ERR_ABORTED at https://www.cgijoburg.gov.in/pdf/CII-PWC%20White%20Paper%20-%20Indian%20Industrys%20Inclusive%20Footprint%20in%20SA.pdf
+Call log:
+  - navigating to "https://www.cgijoburg.gov.in/pdf/CII-PWC%20White%20Paper%20-%20Indian%20Industrys%20Inclusive%20Footprint%20in%20SA.pdf", waiting until "networkidle"
+
+2025-07-09 11:28:06,629 | __main__ | INFO | conduct_due_diligence:762 | Analysis progress: 37.9%
+2025-07-09 11:28:06,657 | __main__ | ERROR | generate_pdf:443 | PDF generation failed for https://d3u7ubx0okog7j.cloudfront.net/documents/CONTRACT_MANAGEMENT_MANUAL_CHAPTER-3_UPDATED_MAY_2023.pdf: Page.goto: net::ERR_ABORTED at https://d3u7ubx0okog7j.cloudfront.net/documents/CONTRACT_MANAGEMENT_MANUAL_CHAPTER-3_UPDATED_MAY_2023.pdf
+Call log:
+  - navigating to "https://d3u7ubx0okog7j.cloudfront.net/documents/CONTRACT_MANAGEMENT_MANUAL_CHAPTER-3_UPDATED_MAY_2023.pdf", waiting until "networkidle"
+
+2025-07-09 11:28:06,657 | __main__ | INFO | conduct_due_diligence:762 | Analysis progress: 41.4%
+2025-07-09 11:28:06,671 | __main__ | ERROR | generate_pdf:443 | PDF generation failed for https://www.westerncoal.in/images/ANNUAL%20REPORT%202021-22-WCL-eng.pdf: Page.goto: net::ERR_ABORTED at https://www.westerncoal.in/images/ANNUAL%20REPORT%202021-22-WCL-eng.pdf
+Call log:
+  - navigating to "https://www.westerncoal.in/images/ANNUAL%20REPORT%202021-22-WCL-eng.pdf", waiting until "networkidle"
+
+2025-07-09 11:28:06,672 | __main__ | INFO | conduct_due_diligence:762 | Analysis progress: 44.8%
+2025-07-09 11:28:07,063 | __main__ | ERROR | generate_pdf:443 | PDF generation failed for https://ntpc.co.in/sites/default/files/annual-report/complete-reports/Annual%20Report%202023-24.pdf: Page.goto: net::ERR_ABORTED at https://ntpc.co.in/sites/default/files/annual-report/complete-reports/Annual%20Report%202023-24.pdf
+Call log:
+  - navigating to "https://ntpc.co.in/sites/default/files/annual-report/complete-reports/Annual%20Report%202023-24.pdf", waiting until "networkidle"
+
+2025-07-09 11:28:07,063 | __main__ | INFO | conduct_due_diligence:762 | Analysis progress: 48.3%
+2025-07-09 11:28:07,265 | __main__ | ERROR | generate_pdf:443 | PDF generation failed for https://www.un.org/development/desa/dpad/wp-content/uploads/sites/45/WESP2020_FullReport.pdf: Page.goto: net::ERR_ABORTED at https://www.un.org/development/desa/dpad/wp-content/uploads/sites/45/WESP2020_FullReport.pdf
+Call log:
+  - navigating to "https://www.un.org/development/desa/dpad/wp-content/uploads/sites/45/WESP2020_FullReport.pdf", waiting until "networkidle"
+
+2025-07-09 11:28:07,266 | __main__ | INFO | conduct_due_diligence:762 | Analysis progress: 51.7%
+2025-07-09 11:28:07,359 | __main__ | ERROR | generate_pdf:443 | PDF generation failed for https://www.cmpdi.co.in/sites/default/files/2023-07/CMPDIL_Annual_Report_2022-23.pdf: Page.goto: net::ERR_ABORTED at https://www.cmpdi.co.in/sites/default/files/2023-07/CMPDIL_Annual_Report_2022-23.pdf
+Call log:
+  - navigating to "https://www.cmpdi.co.in/sites/default/files/2023-07/CMPDIL_Annual_Report_2022-23.pdf", waiting until "networkidle"
+
+2025-07-09 11:28:07,362 | __main__ | INFO | conduct_due_diligence:762 | Analysis progress: 55.2%
+2025-07-09 11:28:07,475 | __main__ | ERROR | generate_pdf:443 | PDF generation failed for https://www.peabodyenergy.com/Peabody/media/MediaLibrary/Investor%20Info/10K-Year-Ended-12-31-2023.pdf?ext=.pdf: Page.goto: net::ERR_ABORTED at https://www.peabodyenergy.com/Peabody/media/MediaLibrary/Investor%20Info/10K-Year-Ended-12-31-2023.pdf?ext=.pdf
+Call log:
+  - navigating to "https://www.peabodyenergy.com/Peabody/media/MediaLibrary/Investor%20Info/10K-Year-Ended-12-31-2023.pdf?ext=.pdf", waiting until "networkidle"
+
+2025-07-09 11:28:07,477 | __main__ | INFO | conduct_due_diligence:762 | Analysis progress: 58.6%
+2025-07-09 11:28:07,568 | __main__ | ERROR | generate_pdf:443 | PDF generation failed for https://www.bcclweb.in/files/2022/07/Annual_Report_Account_2021-22_Eng.pdf: Page.goto: net::ERR_ABORTED at https://www.bcclweb.in/files/2022/07/Annual_Report_Account_2021-22_Eng.pdf
+Call log:
+  - navigating to "https://www.bcclweb.in/files/2022/07/Annual_Report_Account_2021-22_Eng.pdf", waiting until "networkidle"
+
+2025-07-09 11:28:07,569 | __main__ | INFO | conduct_due_diligence:762 | Analysis progress: 62.1%
+2025-07-09 11:28:07,887 | __main__ | ERROR | generate_pdf:443 | PDF generation failed for https://www.unodc.org/documents/southasia/reports/Final_National_Anti-Corruption_Referral.pdf: Page.goto: net::ERR_ABORTED at https://www.unodc.org/documents/southasia/reports/Final_National_Anti-Corruption_Referral.pdf
+Call log:
+  - navigating to "https://www.unodc.org/documents/southasia/reports/Final_National_Anti-Corruption_Referral.pdf", waiting until "networkidle"
+
+2025-07-09 11:28:07,888 | __main__ | INFO | conduct_due_diligence:762 | Analysis progress: 65.5%
+2025-07-09 11:28:09,155 | __main__ | INFO | generate_pdf:439 | PDF generated successfully: COAL INDIA LIMITED_www.indiabudget.gov.in_20250709_112609.pdf
+2025-07-09 11:28:09,155 | __main__ | INFO | conduct_due_diligence:762 | Analysis progress: 69.0%
+2025-07-09 11:28:11,525 | __main__ | INFO | generate_pdf:439 | PDF generated successfully: COAL INDIA LIMITED_en.wikipedia.org_20250709_112628.pdf
+2025-07-09 11:28:11,525 | __main__ | INFO | conduct_due_diligence:762 | Analysis progress: 72.4%
+2025-07-09 11:28:11,895 | __main__ | INFO | generate_pdf:439 | PDF generated successfully: COAL INDIA LIMITED_violationtrackerglobal.goodjobsfirst.org_20250709_112629.pdf
+2025-07-09 11:28:11,895 | __main__ | INFO | conduct_due_diligence:762 | Analysis progress: 75.9%
+2025-07-09 11:28:12,015 | __main__ | INFO | generate_pdf:439 | PDF generated successfully: COAL INDIA LIMITED_www.icicidirect.com_20250709_112803.pdf
+2025-07-09 11:28:12,015 | __main__ | INFO | conduct_due_diligence:762 | Analysis progress: 79.3%
+2025-07-09 11:28:12,290 | __main__ | INFO | generate_pdf:439 | PDF generated successfully: COAL INDIA LIMITED_archive.coalindia.in_20250709_112604.pdf
+2025-07-09 11:28:12,291 | __main__ | INFO | conduct_due_diligence:762 | Analysis progress: 82.8%
+2025-07-09 11:28:13,642 | __main__ | INFO | generate_pdf:439 | PDF generated successfully: COAL INDIA LIMITED_prsindia.org_20250709_112802.pdf
+2025-07-09 11:28:13,642 | __main__ | INFO | conduct_due_diligence:762 | Analysis progress: 86.2%
+2025-07-09 11:28:14,781 | __main__ | INFO | generate_pdf:439 | PDF generated successfully: COAL INDIA LIMITED_www.coalindia.in_20250709_112606.pdf
+2025-07-09 11:28:14,781 | __main__ | INFO | conduct_due_diligence:762 | Analysis progress: 89.7%
+2025-07-09 11:28:17,478 | __main__ | INFO | generate_pdf:439 | PDF generated successfully: COAL INDIA LIMITED_www.adaniwatch.org_20250709_112612.pdf
+2025-07-09 11:28:17,479 | __main__ | INFO | conduct_due_diligence:762 | Analysis progress: 93.1%
+2025-07-09 11:28:19,990 | __main__ | INFO | generate_pdf:439 | PDF generated successfully: COAL INDIA LIMITED_mospi.gov.in_20250709_112701.pdf
+2025-07-09 11:28:19,990 | __main__ | INFO | conduct_due_diligence:762 | Analysis progress: 96.6%
+2025-07-09 11:28:21,334 | __main__ | INFO | generate_pdf:439 | PDF generated successfully: COAL INDIA LIMITED_www.mahanadicoal.in_20250709_112608.pdf
+2025-07-09 11:28:21,334 | __main__ | INFO | conduct_due_diligence:762 | Analysis progress: 100.0%
+2025-07-09 11:28:23,066 | __main__ | INFO | conduct_due_diligence:786 | Due diligence completed for COAL INDIA LIMITED: MINIMAL RISK risk level
+2025-07-09 11:28:23,071 | __main__ | INFO | generate_comprehensive_report:586 | Comprehensive report generated: VendorDueDiligence_COAL INDIA LIMITED_20250709_112823.txt
