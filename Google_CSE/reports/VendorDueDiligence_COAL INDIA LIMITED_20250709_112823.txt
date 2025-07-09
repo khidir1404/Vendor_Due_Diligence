@@ -1,0 +1,56 @@
+================================================================================
+ENTERPRISE VENDOR DUE DILIGENCE REPORT
+================================================================================
+Company: COAL INDIA LIMITED
+Analysis Date: 2025-07-09 11:25:57
+Report ID: DE9FA7D0
+NLP Engine: Stanford Stanza v1.10.1
+
+EXECUTIVE SUMMARY
+--------------------
+Overall Risk Level: MINIMAL RISK
+Risk Score: 0.00/1.00
+Total Pages Analyzed: 29
+Risk Findings: 0
+Clean Pages: 29
+PDF Archives Generated: 10
+
+RISK ASSESSMENT RESULTS
+-------------------------
+✓ No significant risk indicators identified
+✓ Company mentions found in clean contexts
+✓ Recommended for standard due diligence procedures
+
+RECOMMENDATIONS
+---------------
+• Proceed with standard vendor onboarding process
+• Implement routine monitoring procedures
+• Maintain regular vendor performance reviews
+• Analyzed 29 web sources using Stanford Stanza NLP
+• All source documents archived for audit purposes
+• Recommend periodic re-assessment based on vendor risk profile
+
+ARCHIVED DOCUMENTS
+------------------
+Generated 10 PDF archives:
+• COAL INDIA LIMITED_www.indiabudget.gov.in_20250709_112609.pdf
+• COAL INDIA LIMITED_en.wikipedia.org_20250709_112628.pdf
+• COAL INDIA LIMITED_violationtrackerglobal.goodjobsfirst.org_20250709_112629.pdf
+• COAL INDIA LIMITED_www.icicidirect.com_20250709_112803.pdf
+• COAL INDIA LIMITED_archive.coalindia.in_20250709_112604.pdf
+• COAL INDIA LIMITED_prsindia.org_20250709_112802.pdf
+• COAL INDIA LIMITED_www.coalindia.in_20250709_112606.pdf
+• COAL INDIA LIMITED_www.adaniwatch.org_20250709_112612.pdf
+• COAL INDIA LIMITED_mospi.gov.in_20250709_112701.pdf
+• COAL INDIA LIMITED_www.mahanadicoal.in_20250709_112608.pdf
+
+COMPLIANCE & METHODOLOGY
+-------------------------
+• Analysis conducted using Stanford Stanza NLP framework
+• Risk scoring based on proximity and semantic analysis
+• All source documents archived for audit purposes
+• Findings require human review for final decision-making
+
+================================================================================
+END OF REPORT
+================================================================================
